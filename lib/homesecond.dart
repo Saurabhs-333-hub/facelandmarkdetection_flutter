@@ -197,7 +197,6 @@ class FacePainter extends CustomPainter {
     for (var i = 0; i < faces.length; i++) {
       canvas.drawRect(rects[i], paint);
       canvas.drawLine(Offset(0, 0), Offset(2, 2), paint);
-      // i want to draw line by contour list<list<double>> contour given
       Path path = Path();
       path.moveTo(contours![0][0], contours![0][1]);
       for (int j = 0; j < contours!.length; j++) {
